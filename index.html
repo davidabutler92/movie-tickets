@@ -5,9 +5,55 @@
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/main.js"></script>
-    <title></title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <title class="animate__animated animate__bounce">Movie Ticket Prices</title>
   </head>
   <body>
-    
+    <div class="container">
+      <div class="jumbotron">
+        <h1> Welcome to Moolah Theatre!
+          <small>Lots and lots of movies....</small>
+        </h1>
+      </div>
+      <form id="movieForm">
+        <div class="card">
+          <label for="movieGenre">Please select a movie:</label>
+          <select class="form-control" id="movieGenre">
+            <option required>Please Select Movie:</option>
+            <option value="childMovie"> The Smiling Cat</option>
+            <option value="adultMovie"> Staying Indoors Going Crazy</option>
+            <option value="discountMovie">Neverending Pandemic</option>
+          </select>
+        </div>
+        <div class="card">
+          <label for="movieTime">Please select time:</label>
+          <select class="form-control" id="movieTime">
+            <option value="required">Please Select Type:</option>
+            <option value="morningTime">Morning</option>
+            <option value="afternoonTime">Afternoon</option>
+            <option value="eveningTime">Evening</option>
+          </select>
+        </div>
+        <div class="card">
+          <label for="movieCategory">Please select Movie Category:</label>
+          <select class="form-control" id="movieCategory">
+            <option value="required">Please Select Movie Category</option>
+            <option value="movieAdult">Adult (12+)</option>
+            <option value="movieJunior">Children (Under 12)</option>
+            <option value="movieDiscount">Student/Senior (Over 50+ or College Tution Bill Only!)</option>
+          </select>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <div id="movieStub">
+        <div class="cardResult">
+          Here is your movie ticket:
+        </div>
+      </div>
+    </div>
   </body>
 </html>
