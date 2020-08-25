@@ -10,10 +10,13 @@ body {
    text-align: center;
    margin-top: 5%;
  }
-title {
+h1 {
   display: inline-block;
   margin: 0 0.5rem;
-
-  animation: bounce; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s; /* don't forget to set a duration! */
+  animation: bounce; 
+  animation-duration: 2s; 
+}
+.container {
+  background: rgb(255,175,28);
+  background: linear-gradient(22deg, rgba(255,175,28,0.7678100263852243) 13%, rgba(65,28,255,0.7678100263852243) 23%, rgba(147,48,196,1) 35%, rgba(146,208,77,0.6517150395778364) 50%, rgba(77,208,197,0.6517150395778364) 66%, rgba(15,59,55,0.6517150395778364) 83%);
 }

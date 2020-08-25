@@ -40,5 +40,6 @@ $(document).ready(function() {
     const inputTime = $("#movieTime").val();
     const inputAge = $("#movieCategory").val();
     // console.log(inputMovie, inputTime, inputAge);
+    $(".cardResult").text(inputMovie, inputTime, inputAge);
   });
 });
